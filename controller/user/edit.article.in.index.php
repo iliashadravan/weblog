@@ -1,7 +1,7 @@
 <?php
 
 global $db;
-require_once 'db.php'; // مسیر صحیح به db.php
+require_once '../../controller/db.php'; // مسیر صحیح به db.php
 if (!isset($_GET['id'])) {
     header('Location:/weblog/view/index.php');
     exit;
@@ -15,7 +15,7 @@ if (isset($_POST['title'])) {
     $body = $_POST['body'];
     $sql = "UPDATE blog SET title='$title', body='$body' WHERE id=$post_id";
     $result = $db->query($sql);
-    header('Location:/weblog/view/index.php');
+    header('Location:/weblog/view/user/index.php');
     exit;
 }
 

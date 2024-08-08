@@ -1,5 +1,5 @@
 <?php
-require_once '../controller/edit.article.php';
+require_once '../../controller/user/edit.article.php';
 global$blog;
 ?>
 <!DOCTYPE html>
@@ -100,7 +100,7 @@ global$blog;
     <textarea id="body" name="body" required><?= htmlspecialchars($blog['body']) ?></textarea><br>
 
 <button type="submit">Edit</button>
-<a href="articles_after.login.php">Back to panel</a>
+<a href="../articles_after.login.php">Back to panel</a>
 </form>
 </body>
 </html>

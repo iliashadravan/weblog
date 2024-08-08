@@ -1,7 +1,7 @@
 <?php
 
 if(! isset($_GET['id'])) {
-    header("Location:/weblog/view/index.php");
+    header("Location:/weblog/view/user/index.php");
     return;
 }
 
@@ -19,7 +19,7 @@ mysqli_stmt_bind_param($stmt , 'i' , $id);
 mysqli_stmt_execute($stmt);
 
 
-header("Location:/weblog/view/index.php");
+header("Location:/weblog/view/user/index.php");
 return;
 
 ?>

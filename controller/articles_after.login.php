@@ -1,8 +1,8 @@
 <?php
 
 global $db;
-require_once 'db.php';
-require_once 'jdf.php';
+require_once '../controller/db.php';
+require_once '../controller/jdf.php';
 
 if (!isset($_SESSION['email'])) {
     header('Location:/weblog/view/login.php');

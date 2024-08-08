@@ -1,8 +1,8 @@
 <?php
 
 global $db;
-require_once 'db.php';
-require_once 'auth.php';
+require_once '../../controller/db.php';
+require_once '../../controller/auth.php';
 
 // گرفتن اطلاعات کاربر
 $sql = "SELECT * FROM `users` WHERE email='{$_SESSION['email']}'";

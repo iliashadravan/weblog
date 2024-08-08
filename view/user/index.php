@@ -1,5 +1,5 @@
 <?php
-require_once '../controller/index.php';
+require_once '../../controller/user/index.php';
 ?>
 <!DOCTYPE html>
 <html lang="fa">
@@ -150,7 +150,7 @@ require_once '../controller/index.php';
                     <h2><?php echo 'Title: ' . htmlspecialchars($row['title'], ENT_QUOTES, 'UTF-8'); ?></h2>
                     <p><?php echo 'Body: ' . nl2br(htmlspecialchars($row['body'], ENT_QUOTES, 'UTF-8')); ?></p>
                     <a href="edit.article.in.index.php?id=<?php echo $row['id']; ?>">Edit</a>
-                    <a href="controllere_article.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this article?');">Delete</a>
+                    <a href="../../controller/user/delete.article.in.index.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete this article?');">Delete</a>
                 </div>
                 <?php
             }
@@ -161,7 +161,7 @@ require_once '../controller/index.php';
     <footer>
         <div class="button-container">
             <a class="new-article" href="article.php">Add a new article</a>
-            <a class="logout" href="controllert.php">Logout</a>
+            <a class="logout" href="../../controller/logout.php">Logout</a>
             <a class="edit-user" href="edit.php">Edit user information</a>
         </div>
     </footer>

@@ -1,5 +1,5 @@
 <?php
-require_once '../controller/edit.user.php';
+require_once '../../controller/user/edit.user.php';
 global$user_email; global$user_lastname; global$user_firstname;
 ?>
 <!DOCTYPE html>

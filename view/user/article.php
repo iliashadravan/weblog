@@ -1,5 +1,5 @@
 <?php
-require_once '../controller/save_article.php';
+require_once '../../controller/user/save_article.php';
 ?>
 <!DOCTYPE html>
 <html lang="fa">
@@ -95,7 +95,7 @@ require_once '../controller/save_article.php';
     </style>
 </head>
 <body>
-<form action="controllerarticle.php" method="post">
+<form action="../../controller/user/save_article.php" method="post">
     <h1>Article</h1>
     <label for="title">title:</label>
     <input type="text" id="title" name="title">

@@ -1,7 +1,7 @@
 <?php
 global $db;
-require_once 'db.php';
-require_once 'functions.php';
+require_once '../../controller/db.php';
+require_once '../../controller/functions.php';
 
 
 $errors = [];
@@ -32,7 +32,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {     // POST is secretary than GET
             echo 'error: ' . mysqli_error($db);
             exit;
         }
-        header("location:/weblog/view/index.php");
+        header("location:/weblog/view/user/index.php");
     }
 }
 

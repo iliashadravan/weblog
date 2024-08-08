@@ -1,8 +1,8 @@
 <?php
 
 global $db, $db, $db;
-require_once 'db.php';
-require_once 'auth.php';
+require_once '../../controller/db.php';
+require_once '../../controller/auth.php';
 
 $email = $_SESSION['email'];
 $success_message = '';

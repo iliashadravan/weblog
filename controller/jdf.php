@@ -2,6 +2,7 @@
 
 function div($a, $b) {
     return (int) ($a / $b);
+    //ghsp
 }
 
 function gregorian_to_jalali($gy, $gm, $gd, $mod = '') {

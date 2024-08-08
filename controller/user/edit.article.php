@@ -1,7 +1,7 @@
 <?php
 
 global $db;
-require_once 'db.php'; // مسیر صحیح به db.php
+require_once '../../controller/db.php'; // مسیر صحیح به db.php
 
 if (!isset($_GET['id'])) {
     header('Location:/weblog/view/articles_after.login.php');
@@ -28,7 +28,7 @@ if (isset($_POST['title'])) {
     $stmt->bind_param('ssi', $title, $body, $post_id);
 
     if ($stmt->execute()) {
-        header('Location:/weblog/view/admin/list_users.admin.php');
+        header('Location:/weblog/view/articles_after.login.php');
         exit;
     } else {
 

@@ -127,7 +127,7 @@ global$email, $result;
             <h2><?php echo htmlspecialchars($row['title']); ?></h2>
             <p><?php echo nl2br(htmlspecialchars($row['body'])); ?></p>
             <p class="author">Written
-                by: <?php echo htmlspecialchars($row['firstname']) . ' articles_after.login.php' . htmlspecialchars($row['lastname']); ?></p>
+                by: <?php echo htmlspecialchars($row['firstname']),'           '   ,  htmlspecialchars($row['lastname']); ?></p>
             <p class="time">Published on:
                 <?php
                 $timestamp = strtotime($row['time']);
@@ -143,8 +143,8 @@ global$email, $result;
             </p>
             <div class="actions">
                 <?php if ($row['user_email'] === $email): ?>
-                    <a href="edit.article.php?id=<?php echo $row['id']; ?>">Edit</a>
-                    <a href="controllere_article.php?id=<?php echo $row['id']; ?>"
+                    <a href="user/edit.article.php?id=<?php echo $row['id']; ?>">Edit</a>
+                    <a href="../controller/user/delete_article.php?id=<?php echo $row['id']; ?>"
                        onclick="return confirm('Are you sure you want to delete this article?');">Delete</a>
                 <?php endif; ?>
             </div>
@@ -152,7 +152,7 @@ global$email, $result;
     <?php endwhile; ?>
 </div>
 <footer>
-    <a href="index.php">go to panel</a>
+    <a href="user/index.php">go to panel</a>
 </footer>
 
 </body>

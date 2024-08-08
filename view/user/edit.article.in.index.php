@@ -1,5 +1,5 @@
 <?php
-require_once '../controller/edit.article.in.index.php';
+require_once '../../controller/user/edit.article.in.index.php';
 global$blog;
 ?>
 <!DOCTYPE html>

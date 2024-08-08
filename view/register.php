@@ -24,7 +24,7 @@ global$show_errors;
         }
 
         h2 {
-            color: #ffffff;
+            color: #b80000;
             font-size: 2.5em;
             margin-bottom: 30px; /* Increased margin-bottom */
             margin-right: 50px;
