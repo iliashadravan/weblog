@@ -9,4 +9,5 @@ if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
     header('Location: /weblog/view/login.php');
     exit();
 }
+//comment
 ?>
